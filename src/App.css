@@ -9,10 +9,13 @@ body{
   background-position: center;
   background-repeat: no-repeat;
 }
-
+.Search{
+  background-color: #340e437d !important;
+  box-shadow: -6px 4px 10px 5px #00000075 !important;
+}
 .app{
   max-width: 600px;
-  margin: 0 auto 300px;
+  margin: 0 auto ;
   background-color: #ffffff59;
   backdrop-filter: blur(10px);
   padding: 20px 30px;
@@ -60,7 +63,7 @@ button:hover{
 .listTodo{
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #ff00a6;
+  border-bottom: 1px solid #ffffff;
 }
 .todo{
   background-color: #340e437d;
@@ -78,13 +81,106 @@ button:hover{
   padding-bottom: 1.5rem;
 }
 
-input, select{
-  padding: 5px;
-  margin-bottom: 10px;
-  border: 1px solid #ddd;
-  background-color: #0840ce30;
+select{
+  appearance: none !important;
+  padding: 15px 5px 3px ;
+  margin-bottom: 20px;
+  font-size: 20px;
+  border: none;
+  background-color: #333a747a;
+  box-shadow: -2px 4px 7px 4px #333974a3;
   color: white;
-  backdrop-filter: blur(60px);
-  border-radius: 3px;
+  transition: all 1s ease;
+  border-bottom: 3px solid #ffffff;
+  border-radius: 5px;
   width: 100%;
+}
+
+.filter, .search{
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid;
+}
+
+.filter-options{
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.filter-options div{
+  flex: 1 1 0;
+}
+option{
+  appearance: none;
+  
+  border: none !important;
+  border-radius: 8px !important;
+  background-color: #e0138b9c;
+  
+  color: rgb(241, 164, 239);
+  font-family: monospace;
+  font-weight: 500;
+
+}
+option:hover{
+  appearance: none !important;
+  background-color: #333974 !important;
+}
+
+input{
+  border: none;
+  width: 100%;
+  font-size: 20px;
+  padding: 15px 5px 3px ;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #ffffff;
+  transition: all 1s ease;
+  background-color: #333a747a;
+  color: #fff;
+  box-shadow: -2px 4px 7px 4px #333974a3;
+}
+div{
+  position: relative;
+}
+input:focus{
+  outline: 0 !important;
+  transition: all 1s ease;
+  border-bottom: 3px solid #e0138c;
+
+}
+select:focus{
+  outline: 0 !important;
+  transition: all 1s ease;
+  border-bottom: 3px solid #e0138c;
+}
+
+.Label{
+  position: absolute;
+  top: -8px;
+  left: 5px;
+  color: #ffffff;
+  background-color: #d812be55;
+  backdrop-filter: blur(10px);
+  width: 60px;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid white;
+}
+.label2{
+  position: absolute;
+  top: -8px;
+  left: 5px;
+  color: #ffffff;
+  background-color: #d812be55;
+  backdrop-filter: blur(10px);
+  width: 90px;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid white;
+}
+
+.lista{
+  background-color: #e0138c;
+  color: white;
 }
